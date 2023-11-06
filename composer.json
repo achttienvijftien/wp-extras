@@ -1,0 +1,41 @@
+{
+  "name": "achttienvijftien/wp-extras",
+  "description": "WordPress starter plugin",
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "homepage": "https://www.1815.nl",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "1815",
+      "email": "it@1815.nl",
+      "homepage": "https://www.1815.nl"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "composer/installers": "^1.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "yoast/phpunit-polyfills": "^1.0",
+    "wp-phpunit/wp-phpunit": "^6.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "achttienvijftien/building-techniques": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "AchttienVijftien\\Plugin\\WPExtras\\": "src/",
+      "AchttienVijftien\\Plugin\\WPExtras\\Test\\": "tests/php/"
+    }
+  },
+  "scripts": {
+    "format": "phpcbf --report-summary --report-source",
+    "lint": "phpcs"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

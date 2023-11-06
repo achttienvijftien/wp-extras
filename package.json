@@ -1,0 +1,18 @@
+{
+  "name": "@achttienvijftien/wp-extras",
+  "version": "1.0.0",
+  "description": "WordPress Extras",
+  "author": "1815 <it@1815.nl>",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "wp-env": "wp-env",
+    "test:php:unit": "wp-env run phpunit \"phpunit -c /var/www/html/wp-content/plugins/wp-extras/phpunit.xml.dist --verbose --testdox\"",
+    "test": "yarn test:php:unit",
+    "format": "composer run-script format",
+    "lint": "composer run-script lint"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^5.6.0"
+  }
+}
