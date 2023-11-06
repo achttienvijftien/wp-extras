@@ -36,6 +36,5 @@
     "format": "phpcbf --report-summary --report-source",
     "lint": "phpcs"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "minimum-stability": "stable"
 }
