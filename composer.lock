@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7545ea59523b3f9f06dc99cd1cc66b49",
+    "content-hash": "4a2350a1319d2f0a4a2c1d1b186b3d11",
     "packages": [
         {
             "name": "composer/installers",
@@ -165,16 +165,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/achttienvijftien/building-techniques.git",
-                "reference": "5fe0059225151dcc035eb51ce1b8c5271effcd23"
+                "reference": "14cb3ba65cbe0254d8db14390b159460d8ca51de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/achttienvijftien/building-techniques/zipball/5fe0059225151dcc035eb51ce1b8c5271effcd23",
-                "reference": "5fe0059225151dcc035eb51ce1b8c5271effcd23",
+                "url": "https://api.github.com/repos/achttienvijftien/building-techniques/zipball/14cb3ba65cbe0254d8db14390b159460d8ca51de",
+                "reference": "14cb3ba65cbe0254d8db14390b159460d8ca51de",
                 "shasum": ""
             },
             "require": {
-                "wp-coding-standards/wpcs": "dev-develop as 2.3.0.1"
+                "wp-coding-standards/wpcs": "^3.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
@@ -199,7 +199,7 @@
                 "issues": "https://github.com/achttienvijftien/building-techniques/issues",
                 "source": "https://github.com/achttienvijftien/building-techniques/tree/main"
             },
-            "time": "2022-11-11T10:26:26+00:00"
+            "time": "2023-11-06T16:27:57+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -2377,16 +2377,16 @@
         },
         {
             "name": "wp-coding-standards/wpcs",
-            "version": "dev-develop",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
-                "reference": "7722c0b8a6f4eb615be4ba8ebe22ed92a5fa87d7"
+                "reference": "b4caf9689f1a0e4a4c632679a44e638c1c67aff1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/7722c0b8a6f4eb615be4ba8ebe22ed92a5fa87d7",
-                "reference": "7722c0b8a6f4eb615be4ba8ebe22ed92a5fa87d7",
+                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/b4caf9689f1a0e4a4c632679a44e638c1c67aff1",
+                "reference": "b4caf9689f1a0e4a4c632679a44e638c1c67aff1",
                 "shasum": ""
             },
             "require": {
@@ -2410,7 +2410,6 @@
                 "ext-iconv": "For improved results",
                 "ext-mbstring": "For improved results"
             },
-            "default-branch": true,
             "type": "phpcodesniffer-standard",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2440,7 +2439,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-09-20T23:16:50+00:00"
+            "time": "2023-09-14T07:06:09+00:00"
         },
         {
             "name": "wp-phpunit/wp-phpunit",
@@ -2552,11 +2551,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "achttienvijftien/building-techniques": 20
     },
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0"
