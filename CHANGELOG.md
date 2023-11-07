@@ -7,8 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2023-11-07
+
 ### Changed
 
 - Require stable version of achttienvijftien/building-techniques (^1.0)
 
-[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.0.0...master
+[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.0.1...main
+
+[1.0.1]: https://github.com/achttienvijftien/wp-extras/compare/1.0.0...1.0.1
