@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a2350a1319d2f0a4a2c1d1b186b3d11",
+    "content-hash": "1c8d81d17c7ad29ec41028377641ade2",
     "packages": [
         {
             "name": "composer/installers",
@@ -161,7 +161,7 @@
     "packages-dev": [
         {
             "name": "achttienvijftien/building-techniques",
-            "version": "dev-main",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/achttienvijftien/building-techniques.git",
@@ -182,7 +182,6 @@
             "suggest": {
                 "dealerdirect/phpcodesniffer-composer-installer": "Allows for easy installation of PHP_CodeSniffer coding standards"
             },
-            "default-branch": true,
             "type": "phpcodesniffer-standard",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -197,7 +196,7 @@
             "description": "Building techniques for WordPress",
             "support": {
                 "issues": "https://github.com/achttienvijftien/building-techniques/issues",
-                "source": "https://github.com/achttienvijftien/building-techniques/tree/main"
+                "source": "https://github.com/achttienvijftien/building-techniques/tree/1.0.0"
             },
             "time": "2023-11-06T16:27:57+00:00"
         },
@@ -2552,9 +2551,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "achttienvijftien/building-techniques": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

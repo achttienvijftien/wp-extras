@@ -24,7 +24,7 @@
     "wp-phpunit/wp-phpunit": "^6.0",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
     "phpcompatibility/phpcompatibility-wp": "*",
-    "achttienvijftien/building-techniques": "dev-main"
+    "achttienvijftien/building-techniques": "^1.0"
   },
   "autoload": {
     "psr-4": {
