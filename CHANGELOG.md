@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2024-02-14
+
 ### Added
 
 - Added function to stop reporting deprecation notices
@@ -17,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Require stable version of achttienvijftien/building-techniques (^1.0)
 
-[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.0.1...main
+[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.1.0...main
+
+[1.1.0]: https://github.com/achttienvijftien/wp-extras/compare/1.0.1...1.1.0
 
 [1.0.1]: https://github.com/achttienvijftien/wp-extras/compare/1.0.0...1.0.1
