@@ -36,3 +36,31 @@ if ( ! function_exists( 'wp_debug_ignore_deprecations' ) ) {
 		}
 	}
 }
+
+if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
+	/**
+	 * Suppresses the doing it wrong messages.
+	 *
+	 * @param array $doing_it_wrong_functions The functions for which the doing it wrong messages are suppressed.
+	 *
+	 * @return void
+	 */
+	function suppress_doing_it_wrong_functions( array $doing_it_wrong_functions ): void {
+		if ( empty( $doing_it_wrong_functions ) ) {
+			return;
+		}
+
+		add_filter(
+			'doing_it_wrong_trigger_error',
+			function ( mixed $trigger, string $function_name ) use ( $doing_it_wrong_functions ) {
+				if ( in_array( $function_name, $doing_it_wrong_functions ) ) {
+					return false;
+				}
+
+				return $trigger;
+			},
+			10,
+			2
+		);
+	}
+}
