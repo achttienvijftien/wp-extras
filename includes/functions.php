@@ -45,7 +45,7 @@ if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
 	 *
 	 * @return void
 	 */
-	function suppress_doing_it_wrong_functions( array $doing_it_wrong_functions ): void {
+	function suppress_doing_it_wrong_functions( array $doing_it_wrong_functions = [] ): void {
 		if ( empty( $doing_it_wrong_functions ) ) {
 			return;
 		}
@@ -53,7 +53,7 @@ if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
 		add_filter(
 			'doing_it_wrong_trigger_error',
 			function ( mixed $trigger, string $function_name ) use ( $doing_it_wrong_functions ) {
-				if ( in_array( $function_name, $doing_it_wrong_functions ) ) {
+				if ( in_array( $function_name, $doing_it_wrong_functions, true ) ) {
 					return false;
 				}
 
