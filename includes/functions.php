@@ -41,19 +41,27 @@ if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
 	/**
 	 * Suppresses the doing it wrong messages.
 	 *
-	 * @param array $doing_it_wrong_functions The functions for which the doing it wrong messages are suppressed.
+	 * @param array $extra_doing_it_wrong_functions The functions for which the doing it wrong messages are suppressed.
 	 *
 	 * @return void
 	 */
-	function suppress_doing_it_wrong_functions( array $doing_it_wrong_functions = [] ): void {
-		if ( empty( $doing_it_wrong_functions ) ) {
-			return;
+	function suppress_doing_it_wrong_functions( array $extra_doing_it_wrong_functions = [] ): void {
+		$doing_it_wrong_functions_to_suppress = [
+			'_load_textdomain_just_in_time',
+			'register_meta',
+		];
+
+		if ( ! empty( $extra_doing_it_wrong_functions ) ) {
+			$doing_it_wrong_functions_to_suppress = array_merge(
+				$doing_it_wrong_functions_to_suppress,
+				$extra_doing_it_wrong_functions
+			);
 		}
 
 		add_filter(
 			'doing_it_wrong_trigger_error',
-			function ( mixed $trigger, string $function_name ) use ( $doing_it_wrong_functions ) {
-				if ( in_array( $function_name, $doing_it_wrong_functions, true ) ) {
+			function ( mixed $trigger, string $function_name ) use ( $doing_it_wrong_functions_to_suppress ) {
+				if ( in_array( $function_name, $doing_it_wrong_functions_to_suppress, true ) ) {
 					return false;
 				}
 
