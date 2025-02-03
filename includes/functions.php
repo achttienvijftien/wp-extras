@@ -37,7 +37,7 @@ if ( ! function_exists( 'wp_debug_ignore_deprecations' ) ) {
 	}
 }
 
-if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
+if ( ! function_exists( 'suppress_doing_it_wrong' ) ) {
 	/**
 	 * Suppresses the doing it wrong messages.
 	 *
@@ -45,7 +45,7 @@ if ( ! function_exists( 'suppress_doing_it_wrong_functions' ) ) {
 	 *
 	 * @return void
 	 */
-	function suppress_doing_it_wrong_functions( array $extra_doing_it_wrong_functions = [] ): void {
+	function suppress_doing_it_wrong( array $extra_doing_it_wrong_functions = [] ): void {
 		$doing_it_wrong_functions_to_suppress = [
 			'_load_textdomain_just_in_time',
 			'register_meta',
