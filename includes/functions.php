@@ -36,3 +36,39 @@ if ( ! function_exists( 'wp_debug_ignore_deprecations' ) ) {
 		}
 	}
 }
+
+if ( ! function_exists( 'suppress_doing_it_wrong' ) ) {
+	/**
+	 * Suppresses the doing it wrong messages.
+	 *
+	 * @param array $extra_doing_it_wrong_functions The functions for which the doing it wrong messages are suppressed.
+	 *
+	 * @return void
+	 */
+	function suppress_doing_it_wrong( array $extra_doing_it_wrong_functions = [] ): void {
+		$doing_it_wrong_functions_to_suppress = [
+			'_load_textdomain_just_in_time',
+			'register_meta',
+		];
+
+		if ( ! empty( $extra_doing_it_wrong_functions ) ) {
+			$doing_it_wrong_functions_to_suppress = array_merge(
+				$doing_it_wrong_functions_to_suppress,
+				$extra_doing_it_wrong_functions
+			);
+		}
+
+		add_filter(
+			'doing_it_wrong_trigger_error',
+			function ( mixed $trigger, string $function_name ) use ( $doing_it_wrong_functions_to_suppress ) {
+				if ( in_array( $function_name, $doing_it_wrong_functions_to_suppress, true ) ) {
+					return false;
+				}
+
+				return $trigger;
+			},
+			10,
+			2
+		);
+	}
+}
