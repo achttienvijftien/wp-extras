@@ -85,11 +85,19 @@ if ( ! function_exists( 'get_plugin_state' ) ) {
 	 * @return string Either "active" or "inactive".
 	 */
 	function get_plugin_state( string $plugin ): string {
-		return
-			in_array( $plugin, (array) get_option( 'active_plugins', [] ), true )
-			||
-			is_plugin_active_for_network( $plugin )
-				? 'active'
-				: 'inactive';
+		if ( in_array( $plugin, (array) get_option( 'active_plugins', [] ), true ) ) {
+			return 'active';
+		}
+
+		if ( ! is_multisite() ) {
+			return 'inactive';
+		}
+
+		$plugins = get_site_option( 'active_sitewide_plugins' );
+		if ( isset( $plugins[ $plugin ] ) ) {
+			return 'active';
+		}
+
+		return 'inactive';
 	}
 }

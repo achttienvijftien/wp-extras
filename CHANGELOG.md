@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Do not rely on admin screen only available function `is_plugin_active_for_network()`
+
 ## [1.3.0] - 2025-05-16
 
 ### Added
