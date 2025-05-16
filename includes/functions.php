@@ -75,3 +75,21 @@ if ( ! function_exists( 'suppress_doing_it_wrong' ) ) {
 		);
 	}
 }
+
+if ( ! function_exists( 'get_plugin_state' ) ) {
+	/**
+	 * Gets plugin state.
+	 *
+	 * @param string $plugin Path to the plugin file relative to the plugins directory.
+	 *
+	 * @return string Either "active" or "inactive".
+	 */
+	function get_plugin_state( string $plugin ): string {
+		return
+			in_array( $plugin, (array) get_option( 'active_plugins', [] ), true )
+			||
+			is_plugin_active_for_network( $plugin )
+				? 'active'
+				: 'inactive';
+	}
+}
