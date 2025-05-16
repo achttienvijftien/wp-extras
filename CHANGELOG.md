@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.1] - 2025-05-16
+
 ### Fixed
 
 - Do not rely on admin screen only available function `is_plugin_active_for_network()`
@@ -39,7 +41,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Require stable version of achttienvijftien/building-techniques (^1.0)
 
-[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.3.0...main
+[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.3.1...main
+
+[1.3.1]: https://github.com/achttienvijftien/wp-extras/compare/1.3.0...1.3.1
 
 [1.3.0]: https://github.com/achttienvijftien/wp-extras/compare/1.2.0...1.3.0
 
