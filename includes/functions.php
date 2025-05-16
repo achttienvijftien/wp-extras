@@ -2,6 +2,9 @@
 
 use AchttienVijftien\Plugin\WPExtras\Filter;
 
+global $wp_extras_functions_autoloaded;
+$wp_extras_functions_autoloaded = true;
+
 if ( ! function_exists( 'remove_filter_with_instantiated_class' ) ) {
 	/**
 	 * @see Filter::remove_with_instantiated_class()

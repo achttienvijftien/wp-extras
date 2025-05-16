@@ -30,7 +30,10 @@
     "psr-4": {
       "AchttienVijftien\\Plugin\\WPExtras\\": "src/",
       "AchttienVijftien\\Plugin\\WPExtras\\Test\\": "tests/php/"
-    }
+    },
+    "files": [
+      "includes/functions.php"
+    ]
   },
   "scripts": {
     "format": "phpcbf --report-summary --report-source",
