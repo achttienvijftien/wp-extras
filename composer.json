@@ -16,7 +16,7 @@
   ],
   "require": {
     "php": "^8.0",
-    "composer/installers": "^1.8"
+    "composer/installers": "^1.8 || ^2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5",
@@ -39,5 +39,11 @@
     "format": "phpcbf --report-summary --report-source",
     "lint": "phpcs"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
 }
