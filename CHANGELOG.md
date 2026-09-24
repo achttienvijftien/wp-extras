@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.2] - 2026-09-24
+
 ### Changed
 
-- Composer require "composer/installer:^1.8 || ^2.0"
+- Change composer/installers requirement to `^1.8 || ^2.0`
 
 ## [1.3.1] - 2025-05-16
 
@@ -45,7 +47,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Require stable version of achttienvijftien/building-techniques (^1.0)
 
-[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.3.1...main
+[unreleased]: https://github.com/achttienvijftien/wp-extras/compare/1.3.2...main
+[1.3.2]: https://github.com/achttienvijftien/wp-extras/compare/1.3.1...1.3.2
 
 [1.3.1]: https://github.com/achttienvijftien/wp-extras/compare/1.3.0...1.3.1
 
